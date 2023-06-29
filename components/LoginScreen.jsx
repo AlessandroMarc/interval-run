@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, TextInput, Button, StyleSheet } from "react-native";
 
-const LoginScreen = () => {
+export default function LoginScreen() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -17,7 +17,7 @@ const LoginScreen = () => {
             <Button title="Login" onPress={handleLogin} />
         </View>
     );
-};
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: "#ccc",
         borderRadius: 5,
+        backgroundColor: "white",
     },
 });
-
-export default LoginScreen;

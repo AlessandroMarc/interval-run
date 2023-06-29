@@ -1,12 +1,11 @@
 import * as React from "react";
 import { Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 
-function SettingsScreen() {
+export default function SettingsScreen() {
     return (
         <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
             <Text>Settings</Text>
         </View>
     );
 }
-
-export default SettingsScreen;
